@@ -1,5 +1,5 @@
 #Resource: https://www.credera.com/blog/business-intelligence/twitter-analytics-using-r-part-1-extract-tweets/
-
+# Sample code to pull data from Twitter's #nba hashtag
 library("twitteR")
 library("ROAuth")
 library("base64enc")
@@ -16,6 +16,7 @@ cred <- OAuthFactory$new(consumerKey='721fHH3wMcWQTFnynT92hjjjdk',
 # Executing the next step generates an output --> To enable the connection, please direct your web browser to: <hyperlink> .
 # Note:  You only need to do this part once, input the pin after authentication in R console
 cred$handshake(cainfo="cacert.pem")
+
 #save for later use
 save(cred, file="twitter authentication.Rdata")
 
